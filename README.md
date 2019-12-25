@@ -9,6 +9,13 @@ npi i
 npm start
 (Server starts up on port 3001)
 
+To rebuild CPP interface in server:
+go into server folder
+node-gyp configure
+node-gyp build
+
+Then relaunch the server.
+
 then start new shell in main folder
 npm i
 npm start
