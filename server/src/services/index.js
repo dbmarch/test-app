@@ -12,9 +12,8 @@ const services = app => {
 		router.get('/', (req, res, next) => res.status(200).send({ message: 'Hello from Express' }))
 	)
 
-	addRoute('/cpp', router =>
-	router.get('/', (req, res, next) => res.status(200).send({ message: 'C++ Response' }))
-)
+	addRoute('/cpp', require('./napiService'))
+	
 
 }
 
